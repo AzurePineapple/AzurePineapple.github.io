@@ -55,7 +55,7 @@ function createGeneralTabContent(allPhaseData) {
 
     $('#general').append(`<div class = "title-row">
     <h2>Page visualises ${allPhaseData.length.toLocaleString()} phases, totalling ${getNumberOfEncounters(allPhaseData).toLocaleString()} Pokémon encounters</h2>
-    <img src="images/Littleroot Town.png" alt="Map of Hoenn" class="right-aligned-image">
+    <img src="code/images/Littleroot Town.png" alt="Map of Hoenn" class="right-aligned-image">
     </div>`)
 
 
@@ -190,7 +190,7 @@ async function createRouteContent(tabName, slicedPhaseData) {
 
     $('#' + truncatedTabName).append(`<div class = "title-row">
     <h2>Page visualises ${getNumberOfNonEmptyPhases(slicedPhaseData).toLocaleString()} phases, totalling ${getNumberOfEncounters(slicedPhaseData).toLocaleString()} Pokémon encounters</h2>
-    <img src="images/${tabName}.png" alt="Map of Hoenn" class="right-aligned-image">
+    <img src="code/images/${tabName}.png" alt="Map of Hoenn" class="right-aligned-image">
     </div>`)
     // $('#' + tabName.replace(/\s+/g, '')).append()
 
