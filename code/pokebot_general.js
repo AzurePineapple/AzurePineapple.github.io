@@ -395,7 +395,7 @@ function drawPspChart(renderTo, pspData, tabName) {
                     }
                 },
                 dataLabels: {
-                    enabled: true,
+                    enabled: false,
                     // no idea how I got this working 
                     formatter: function () {
                         const max = Math.max(...this.series.yData);
@@ -1243,7 +1243,7 @@ function drawStreakBarChart(renderTo, streakNames, streakNums) {
             name: 'Number of pokemon in streak',
             data: chartData,
             dataLabels: {
-                enabled: true,
+                enabled: false,
                 formatter: function () {
                     const max = Math.max(...this.series.yData);
                     const min = Math.min(...this.series.yData);
